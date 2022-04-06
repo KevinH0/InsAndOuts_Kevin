@@ -1,4 +1,4 @@
-/*Midterm
+/*Midterm Finals
 */
 PFont Font;
 PFont Symbol;
@@ -35,7 +35,7 @@ void setup(){
 void draw(){
   click = millis();
   if(click - boop >= clicktime && win == 0 && clickstop == 0){
-    println(boop + ": SOUND IS TRIGGERED!!!!");
+//    println(boop + ": SOUND IS TRIGGERED!!!!");
     boop = click;
     i++;
   }
@@ -73,7 +73,7 @@ void draw(){
     fill(255);
     rect(400,200,600,800);
     fill(0);
-    text("Red Lines Count", 525, 150);
+    text("Lines Count= Red number", 475, 150);
     for(int i = 400; i < 1000; i += 32){
       line(i, 200, i, 1000);
     }
@@ -82,7 +82,7 @@ void draw(){
     fill(255);
     rect(400,100,450,100);
     fill(0);
-    text("Combine the symbols", 475,150);
+    text("Find and combine the symbols", 440,150);
     fill(0,0,255);
     text("^%", 200, 300);
     text("!#", 200, 400);
@@ -113,11 +113,11 @@ void draw(){
     }
     if(mouseX >= 400 && mouseX <= 550 && mouseY >= 450 && mouseY <= 550){
       fill(0);
-      text("6+4+X+X", 400, 500);
+      text("(VI+IV)+#+#", 400, 500);
     }
     if(mouseX >= 700 && mouseX <= 800 && mouseY >= 600 && mouseY <= 650){
       fill(0);
-      text("4x4", 700, 650);
+      text("#+#+(X*II)", 700, 650);
     }
     if(mouseX >= 300 && mouseX <= 400 && mouseY >= 450 && mouseY <= 500){
       fill(155);
@@ -131,6 +131,7 @@ void draw(){
     rect(100, 100, 1000, 1000);
     lines();
     strokeWeight(10);
+    text("Press the numbers in order of Red, Blue, White, and Key", 150, 50);
     text("I = 1", 950, 150);
     text("V = 5", 950, 190);
     text("X = 10", 950, 230);
