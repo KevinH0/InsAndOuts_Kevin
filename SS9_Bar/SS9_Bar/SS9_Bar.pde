@@ -1,12 +1,9 @@
-//Shapes
 import processing.serial.*;
 
 Serial myPort;
 int val=0;
 int mono = 0;
-float Random = 0;
-float BoxY = 350;
-float BoxX;
+int buttonState = 0;
 
 
 void setup() {
@@ -39,7 +36,18 @@ void draw() {
   {
     mono = 150;
   }
-  Box();
+  
+  if (buttonState == 0 )
+  {
+    myPort.write(0);
+  }else if(buttonState == 1)
+  {
+    myPort.write(1);
+  }else
+  {
+    myPort.write(2);
+  }
+
   fill(32,32,64);
   ellipse(60, 400-val*1.2, 50, 50);
   fill(64,32,64);
@@ -55,23 +63,19 @@ void draw() {
   fill(32,64,0);
   ellipse(300, 405-val*1.2, 50, 50);
 }
+void mousePressed(){
+  if (buttonState == 0){
+    buttonState++;
+  }else if(buttonState > 0){
+    buttonState--;
+  }
+}
 
-void Box(){
-  long time = millis();
-  println(time);
-  println(BoxY);
-  if(time/1000 == 0)
+void keyPressed(){
+  if(buttonState < 2){
+    buttonState++;
+  }else
   {
-    Random = random(0, 10);
-  }
-  if(Random == 0)
-  {
-    BoxX = random(50,290);
-    fill(0);
-    rect(BoxX, BoxY, 30, 30);
-  }
-  if(time >= 1000 && time/100 == 0)
-  {
-    BoxY-=10;
+    buttonState--;
   }
 }
