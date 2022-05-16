@@ -42,124 +42,434 @@ void loop() {
     
     //Piezo and LED changes
     if(State == 1){
+      digitalWrite(LED1, HIGH);
+      digitalWrite(LED2, HIGH);
+      digitalWrite(LED3, LOW);
+      digitalWrite(LED4, LOW);
+      digitalWrite(LED5, HIGH);
+      digitalWrite(LED6, HIGH);
       tone(BUZZER, 55.00, 150);
       delay(160);
+      digitalWrite(LED1, HIGH);
+      digitalWrite(LED2, LOW);
+      digitalWrite(LED3, LOW);
+      digitalWrite(LED4, LOW);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, HIGH);
       tone(BUZZER, 77.78, 200);
       delay(210);
+      digitalWrite(LED1, HIGH);
+      digitalWrite(LED2, LOW);
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, HIGH);
       tone(BUZZER, 207.65, 180);
       delay(190);
+      digitalWrite(LED1, LOW);
+      digitalWrite(LED2, HIGH);
+      digitalWrite(LED3, LOW);
+      digitalWrite(LED4, LOW);
+      digitalWrite(LED5, HIGH);
+      digitalWrite(LED6, LOW);
       tone(BUZZER, 440.00, 400);
       delay(410);
+      digitalWrite(LED1, LOW);
+      digitalWrite(LED2, LOW);
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, LOW);
       tone(BUZZER, 123.47, 300);
       delay(310);
+      
     }
     if(State == 2){
+      digitalWrite(LED1, HIGH);
+      digitalWrite(LED2, HIGH);
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, LOW);
+      digitalWrite(LED5, HIGH);
+      digitalWrite(LED6, LOW);
       tone(BUZZER, 293.665, 250);
       delay(260);
+      digitalWrite(LED1, HIGH);
+      digitalWrite(LED2, LOW);
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, LOW);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, HIGH);
       tone(BUZZER, 41.20, 100);
       delay(110);
+      digitalWrite(LED1, HIGH);
+      digitalWrite(LED2, LOW);
+      digitalWrite(LED3, LOW);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, HIGH);
       tone(BUZZER, 293.665, 250);
       delay(260);
+      digitalWrite(LED1, HIGH);
+      digitalWrite(LED2, LOW);
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, LOW);
       tone(BUZZER, 61.74, 250);
       delay(260);
+      digitalWrite(LED1, LOW);
+      digitalWrite(LED2, HIGH);
+      digitalWrite(LED3, LOW);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, HIGH);
+      digitalWrite(LED6, HIGH);
       tone(BUZZER, 49.00, 275);
       delay(285);
+      
     }
     if(State == 3){
+      digitalWrite(LED1, LOW);
+      digitalWrite(LED2, HIGH);
+      digitalWrite(LED3, LOW);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, HIGH);
       tone(BUZZER, 19.45, 300);
       delay(310);
+      digitalWrite(LED1, HIGH);
+      digitalWrite(LED2, HIGH);
+      digitalWrite(LED3, LOW);
+      digitalWrite(LED4, LOW);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, HIGH);
       tone(BUZZER, 61.74, 250);
       delay(260);
+      digitalWrite(LED1, HIGH);
+      digitalWrite(LED2, LOW);
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, LOW);
       tone(BUZZER, 293.665, 250);
       delay(260);
+      digitalWrite(LED1, LOW);
+      digitalWrite(LED2, LOW);
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, HIGH);
       tone(BUZZER, 41.20, 100);
       delay(110);
+      digitalWrite(LED1, HIGH);
+      digitalWrite(LED2, LOW);
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, LOW);
+      digitalWrite(LED5, HIGH);
+      digitalWrite(LED6, LOW);
       tone(BUZZER, 43.65, 100);
       delay(110);
+      
     }
     if(State == 4){
+      digitalWrite(LED1, LOW);
+      digitalWrite(LED2, LOW);
+      digitalWrite(LED3, LOW);
+      digitalWrite(LED4, LOW);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, LOW);
       tone(BUZZER, 41.20, 100);
       delay(110);
+      digitalWrite(LED1, HIGH);
+      digitalWrite(LED2, LOW);
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, LOW);
+      digitalWrite(LED5, HIGH);
+      digitalWrite(LED6, LOW);
       tone(BUZZER, 293.665, 250);
       delay(260);
+      digitalWrite(LED1, LOW);
+      digitalWrite(LED2, HIGH);
+      digitalWrite(LED3, LOW);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, HIGH);
+      digitalWrite(LED6, LOW);
       tone(BUZZER, 61.74, 250);
       delay(260);
+      digitalWrite(LED1, LOW);
+      digitalWrite(LED2, HIGH);
+      digitalWrite(LED3, LOW);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, LOW);
       tone(BUZZER, 293.665, 250);
       delay(260);
+      digitalWrite(LED1, LOW);
+      digitalWrite(LED2, HIGH);
+      digitalWrite(LED3, LOW);
+      digitalWrite(LED4, LOW);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, LOW);
       tone(BUZZER, 130.81, 250);
       delay(260);
+      
     }
     if(State == 5){
+      digitalWrite(LED1, LOW);
+      digitalWrite(LED2, HIGH);
+      digitalWrite(LED3, LOW);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, HIGH);
       tone(BUZZER, 1108.73, 500);
       delay(260);
+      digitalWrite(LED1, LOW);
+      digitalWrite(LED2, LOW);
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, LOW);
+      digitalWrite(LED5, HIGH);
+      digitalWrite(LED6, HIGH);
       tone(BUZZER, 440.00, 250);
       delay(110);
+      digitalWrite(LED1, HIGH);
+      digitalWrite(LED2, LOW);
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, LOW);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, LOW);
       tone(BUZZER, 659.25, 300);
       delay(260);
+      digitalWrite(LED1, LOW);
+      digitalWrite(LED2, HIGH);
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, HIGH);
       tone(BUZZER, 830.61, 275);
       delay(260);
+      digitalWrite(LED1, HIGH);
+      digitalWrite(LED2, LOW);
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, LOW);
+      digitalWrite(LED5, HIGH);
+      digitalWrite(LED6, LOW);
       tone(BUZZER, 1046.50, 325);
       delay(285);
+      
     }
     if(State == 6){
+      digitalWrite(LED1, LOW);
+      digitalWrite(LED2, HIGH);
+      digitalWrite(LED3, LOW);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, HIGH);
       tone(BUZZER, 293.665, 250);//d
       delay(260);
+      digitalWrite(LED1, HIGH);
+      digitalWrite(LED2, LOW);
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, LOW);
+      digitalWrite(LED5, HIGH);
+      digitalWrite(LED6, LOW);
       tone(BUZZER, 293.665, 250);
       delay(260);
+      digitalWrite(LED1, LOW);
+      digitalWrite(LED2, LOW);
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, LOW);
       tone(BUZZER, 2349.32, 500);//d7
       delay(510);
+      digitalWrite(LED1, LOW);
+      digitalWrite(LED2, LOW);
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, LOW);
       tone(BUZZER, 55.00 , 500);//a
       delay(510);
+      digitalWrite(LED1, LOW);
+      digitalWrite(LED2, HIGH);
+      digitalWrite(LED3, LOW);
+      digitalWrite(LED4, LOW);
+      digitalWrite(LED5, HIGH);
+      digitalWrite(LED6, LOW);
       tone(BUZZER, 415.305 , 500);//g#
       delay(510);
+      
     }
     if(State == 7){
+      digitalWrite(LED1, LOW);
+      digitalWrite(LED2, LOW);
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, LOW);
       tone(BUZZER, 415.305 , 500);//g
       delay(510);
+      digitalWrite(LED1, HIGH);
+      digitalWrite(LED2, LOW);
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, HIGH);
+      digitalWrite(LED6, LOW);
       tone(BUZZER, 43.65 , 500);//f
       delay(510);
+      digitalWrite(LED1, HIGH);
+      digitalWrite(LED2, HIGH);
+      digitalWrite(LED3, LOW);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, HIGH);
+      digitalWrite(LED6, LOW);
       tone(BUZZER, 293.665, 250);
       delay(260);
+      digitalWrite(LED1, HIGH);
+      digitalWrite(LED2, LOW);
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, LOW);
+      digitalWrite(LED5, HIGH);
+      digitalWrite(LED6, HIGH);
       tone(BUZZER, 43.65 , 250);
       delay(260);
+      digitalWrite(LED1, HIGH);
+      digitalWrite(LED2, HIGH);
+      digitalWrite(LED3, LOW);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, LOW);
       tone(BUZZER, 415.305 , 250);
       delay(260);
+      
     }
     if(State == 8){
+      digitalWrite(LED1, LOW);
+      digitalWrite(LED2, LOW);
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, HIGH);
+      digitalWrite(LED6, LOW);
       tone(BUZZER, 261.63 , 250);
       delay(260);
+      digitalWrite(LED1, LOW);
+      digitalWrite(LED2, HIGH);
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, LOW);
+      digitalWrite(LED5, HIGH);
+      digitalWrite(LED6, LOW);
       tone(BUZZER, 261.63 , 250);
       delay(260);
+      digitalWrite(LED1, LOW);
+      digitalWrite(LED2, HIGH);
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, LOW);
       tone(BUZZER, 2349.32, 500);
       delay(260);
+      digitalWrite(LED1, LOW);
+      digitalWrite(LED2, HIGH);
+      digitalWrite(LED3, LOW);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, HIGH);
       tone(BUZZER, 55.00 , 500);
       delay(510);
+      digitalWrite(LED1, LOW);
+      digitalWrite(LED2, LOW);
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, HIGH);
       tone(BUZZER, 415.305 , 500);//g#
       delay(510);
+      
     }
     if(State == 9){
+      digitalWrite(LED1, LOW);
+      digitalWrite(LED2, HIGH);
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, HIGH);
+      digitalWrite(LED6, LOW);
       tone(BUZZER, 415.305 , 500);//g
       delay(510);
+      digitalWrite(LED1, HIGH);
+      digitalWrite(LED2, HIGH);
+      digitalWrite(LED3, LOW);
+      digitalWrite(LED4, LOW);
+      digitalWrite(LED5, HIGH);
+      digitalWrite(LED6, HIGH);
       tone(BUZZER, 43.65 , 500);//f
       delay(260);
+      digitalWrite(LED1, HIGH);
+      digitalWrite(LED2, HIGH);
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, HIGH);
+      digitalWrite(LED6, HIGH);
       tone(BUZZER, 293.665, 250);
       delay(260);
+      digitalWrite(LED1, LOW);
+      digitalWrite(LED2, LOW);
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, HIGH);
       tone(BUZZER, 43.65 , 250);
       delay(260);
+      digitalWrite(LED1, HIGH);
+      digitalWrite(LED2, LOW);
+      digitalWrite(LED3, LOW);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, HIGH);
       tone(BUZZER, 415.305 , 250);
       delay(260);
+      
     }
     if(State == 10){
+      digitalWrite(LED1, LOW);
+      digitalWrite(LED2, HIGH);
+      digitalWrite(LED3, LOW);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, HIGH);
       tone(BUZZER, 61.74 , 250);
       delay(260);
+      digitalWrite(LED1, HIGH);
+      digitalWrite(LED2, LOW);
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, LOW);
+      digitalWrite(LED5, HIGH);
+      digitalWrite(LED6, LOW);
       tone(BUZZER, 61.74 , 250);
       delay(260);
+      digitalWrite(LED1, LOW);
+      digitalWrite(LED2, LOW);
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, LOW);
       tone(BUZZER, 2349.32, 500);
       delay(260);
+      digitalWrite(LED1, HIGH);
+      digitalWrite(LED2, LOW);
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, HIGH);
       tone(BUZZER, 55.00 , 500);
       delay(260);
+      digitalWrite(LED1, LOW);
+      digitalWrite(LED2, LOW);
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, LOW);
       tone(BUZZER, 415.305, 500);
       delay(510);
+      
     }
 }
 
