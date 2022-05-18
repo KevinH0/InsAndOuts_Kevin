@@ -7,14 +7,14 @@ float Red = random(256);
 float Green = random(256);
 float Blue = random(256);
 
-randomizer RandomValue;
+randomizer RandomValue;//Taking from class randomizer()
 float randomNum;
 
 void setup() {
   size(1000, 1000); 
   textSize (44);
   textAlign (CENTER, CENTER);
-  RandomValue = new randomizer();
+  RandomValue = new randomizer();//Initializing randomizer() to RandomValue
 
   //set up Serial communication
   printArray(Serial.list()); // prints port list to the console
@@ -25,7 +25,7 @@ void setup() {
 void draw() {
   background (255);
   fill (Red, Green, Blue);
-  //Centerpiece
+  //Centerpiece button
   ellipse(width/2, height/2, circle, circle);
   text ("Click the buttons", width/2, height/2);
   //Topside Buttons
@@ -37,7 +37,7 @@ void draw() {
   rect(800, 800, 100, 100);
   rect(300, 800, 400, 100);
   
-  //val= int (map (mouseX, 0, width, 0, 255)); 
+
 }
 
 void mousePressed(){
@@ -50,17 +50,17 @@ void mousePressed(){
   if(mouseX >= 800 && mouseX <= 900 && mouseY >= 100 && mouseY <= 200){
     val = 30;
   }
-  if(mouseX >= 100 && mouseX <= 200 && mouseY >= 400 && mouseY <= 500){
+  if(mouseX >= 100 && mouseX <= 200 && mouseY >= 800 && mouseY <= 900){
     val = 40;
   }
-  if(mouseX >= 300 && mouseX <= 700 && mouseY >= 400 && mouseY <= 500){
+  if(mouseX >= 300 && mouseX <= 700 && mouseY >= 800 && mouseY <= 900){
     val = 50;
   }
-  if(mouseX >= 800 && mouseX <= 900 && mouseY >= 400 && mouseY <= 500){
+  if(mouseX >= 800 && mouseX <= 900 && mouseY >= 800 && mouseY <= 900){
     val = 60;
   }
-  if(dist(mouseX, mouseY, width/2, height/2) < 100){
-    RandomValue.RandomNumber();
+  if(dist(mouseX, mouseY, width/2, height/2) < 100){//Circle mouse pressed
+    RandomValue.RandomNumber();//Random value and color fed everytime the button is pressed
     RandomValue.RandomColor();
   }
     myPort.write(val); //write to Serial
@@ -68,10 +68,12 @@ void mousePressed(){
     
 }
 class randomizer{
+  //Randomizes a value between 70-200 to send to Arduino
   public void RandomNumber(){
     randomNum = random(70, 200);
     val = int(randomNum);
   }
+  //Randomizes the RGB
   public void RandomColor(){
     Red = random(256);
     Green = random(256);

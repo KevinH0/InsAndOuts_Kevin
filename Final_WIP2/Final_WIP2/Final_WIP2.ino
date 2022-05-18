@@ -27,7 +27,7 @@ void loop() {
     delay (10);
   }
     frequency = map (val, 0, 255, 100, 1500);
-    //StateReader
+    //StateReader - Changes the state depending on the value
     if(val == 10){State = 0;}
     else if(val == 20) {State = 1;}
     else if(val == 30) {State = 2;}
@@ -40,8 +40,50 @@ void loop() {
     else if(val <= 179){State = 9;}
     else if(val <= 200){State = 10;}
     
-    //Piezo and LED changes
-    if(State == 1){
+    //Piezo and LED changes depending on the states
+    if(State == 0){
+      digitalWrite(LED1, LOW);
+      digitalWrite(LED2, HIGH);
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, LOW);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, HIGH);
+      tone(BUZZER, 55.00, 150);
+      delay(160);
+      digitalWrite(LED1, HIGH);
+      digitalWrite(LED2, HIGH);
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, LOW);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, HIGH);
+      tone(BUZZER, 77.78, 200);
+      delay(210);
+      digitalWrite(LED1, HIGH);
+      digitalWrite(LED2, HIGH);
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, HIGH);
+      tone(BUZZER, 207.65, 180);
+      delay(190);
+      digitalWrite(LED1, LOW);
+      digitalWrite(LED2, HIGH);
+      digitalWrite(LED3, LOW);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, HIGH);
+      digitalWrite(LED6, HIGH);
+      tone(BUZZER, 440.00, 300);
+      delay(310);
+      digitalWrite(LED1, LOW);
+      digitalWrite(LED2, LOW);
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, HIGH);
+      digitalWrite(LED6, LOW);
+      tone(BUZZER, 440.00, 300);
+      delay(310);
+    }
+    else if(State == 1){
       digitalWrite(LED1, HIGH);
       digitalWrite(LED2, HIGH);
       digitalWrite(LED3, LOW);
@@ -56,7 +98,7 @@ void loop() {
       digitalWrite(LED4, LOW);
       digitalWrite(LED5, LOW);
       digitalWrite(LED6, HIGH);
-      tone(BUZZER, 77.78, 200);
+      tone(BUZZER, 293.665, 200);
       delay(210);
       digitalWrite(LED1, HIGH);
       digitalWrite(LED2, LOW);
@@ -64,8 +106,8 @@ void loop() {
       digitalWrite(LED4, HIGH);
       digitalWrite(LED5, LOW);
       digitalWrite(LED6, HIGH);
-      tone(BUZZER, 207.65, 180);
-      delay(190);
+      tone(BUZZER, 55.00, 150);
+      delay(160);
       digitalWrite(LED1, LOW);
       digitalWrite(LED2, HIGH);
       digitalWrite(LED3, LOW);
@@ -82,7 +124,6 @@ void loop() {
       digitalWrite(LED6, LOW);
       tone(BUZZER, 123.47, 300);
       delay(310);
-      
     }
     if(State == 2){
       digitalWrite(LED1, HIGH);
@@ -474,7 +515,7 @@ void loop() {
 }
 
 void mousePressed()
-{
+{//Whenever the mouse is pressed, it changes the state
   if(val == 10){State == 0;}
   else if(val == 20){State == 1;}
   else if(val == 30){State == 2;}
